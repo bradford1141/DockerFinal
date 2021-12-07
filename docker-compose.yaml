@@ -17,7 +17,29 @@ services:
 
       ZOOKEEPER_CLIENT_PORT: "2181"
 
- 
+
+
+  stedi:
+
+    image: scmurdock/stedi
+
+    ports:
+
+    - "	4567:4567"
+
+  environment:
+
+    REDIS_HOST: 
+
+    REDIS_PORT:
+
+    REDIS_DB:
+
+    KAFKA_BROKER: 
+
+    KAFKA_RISK_TOPIC: 
+  
+
 
   kafka:
 
