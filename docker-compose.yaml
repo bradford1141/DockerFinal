@@ -67,7 +67,7 @@ services:
 
       REDIS_DB: "0"
 
-      KAFKA_BROKER: "kafka:9092"
+      KAFKA_BROKER: "kafka:19092"
 
       KAFKA_RISK_TOPIC: "customer-risk-topic"
 
@@ -75,6 +75,7 @@ services:
 
     - "redis"
     - "kafka"
+
 
   redis:
     image: redis:6.0.6
