@@ -75,3 +75,8 @@ services:
 
     - "redis"
     - "kafka"
+
+  redis:
+    image: redis:6.0.6
+    ports:
+     - "6379:6379"
