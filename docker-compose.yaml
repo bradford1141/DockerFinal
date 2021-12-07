@@ -67,10 +67,11 @@ services:
 
       REDIS_DB: "0"
 
-      KAFKA_BROKER: "kaffy:9092"
+      KAFKA_BROKER: "kafka:9092"
 
       KAFKA_RISK_TOPIC: "customer-risk-topic"
 
     depends_on:
 
     - "redis"
+    - "kafka"
