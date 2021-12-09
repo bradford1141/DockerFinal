@@ -29,7 +29,7 @@ services:
 
     ports:
 
-    - "9092:9092"
+    - "19092:9092"
 
     environment:
 
@@ -67,7 +67,7 @@ services:
 
       REDIS_DB: "0"
 
-      KAFKA_BROKER: "kafka:9092"
+      KAFKA_BROKER: "kafka:19092"
 
       KAFKA_RISK_TOPIC: "customer-risk-topic"
 
